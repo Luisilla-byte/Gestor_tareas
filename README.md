@@ -1,8 +1,8 @@
-# Mi Aplicación Flask
+# API GESTOR DE TAREAS
 
 ## Descripción
 
-Es una aplicación para la gestión de tareas. Permite crear, actualizar y eliminar tareas, y está construida usando Flask para el backend y MySQL para la base de datos.
+Es una aplicación para la gestión de tareas. Permite crear, actualizar y eliminar tareas, y está construida usando Flask para el backend, MySQL para la base de datos y Javascript, HTML y CSS para el frontend.
 
 ## Requisitos
 
