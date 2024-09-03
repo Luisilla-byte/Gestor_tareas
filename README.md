@@ -10,6 +10,7 @@ Es una aplicación para la gestión de tareas. Permite crear, actualizar y elimi
 - **Visual Studio Code**: Asegúrate de tener Visual Studio Code instalado.
 - **Extensión Flask**: Instala la extensión Flask para Visual Studio Code.
 - **MySQL Workbench**: 8.0 o superior
+- **Una vez estando en el repositorio. Por favor seleccionar uno de los branches llamado App_gestor_tareas.
 
 ## Instalación
 
