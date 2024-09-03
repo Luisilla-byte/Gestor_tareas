@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_2.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Menu de Opciones</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <a href="#inicio" class="nav__link active_link">
+                <i class="ri-home-2-line"></i>
+                <span class="nav__name">Inicio</span>
+            </a>
+            <a href="#perfil" class="nav__link">
+                <i class="ri-user-fill"></i>
+                <span class="nav__name">Perfil</span>
+            </a>
+            <a href="#crear_tarea" class="nav__link">
+                <i class="ri-list-check-3"></i>
+                <span class="nav__name">Crear Tarea</span>
+            </a>
+            <a href="#Calendario" class="nav__link">
+                <i class="ri-calendar-event-line"></i>
+                <span class="nav__name">Calendario</span>
+            </a>
+            <a href="#historial" class="nav__link">
+                <i class="ri-folder-2-line"></i>
+                <span class="nav__name">Historial</span>
+            </a>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="inicio">
+            <h2>Inicio</h2>
+        </section>
+        
+        <section id="perfil">
+            <h2>Perfil</h2>
+        </section>
+
+        <section id="crear_tarea">
+            <h2>Crear Tarea</h2>
+            <!-- Popup para agregar tareas -->
+            <div class="popup-box">
+                <div class="popup">
+                    <div class="content">
+                        <header>
+                            <p>Añade una tarea</p>
+                            <i class="ri-close-line"></i>
+                        </header>
+                        <form action="#">
+                            <div class="row title">
+                                <label>Título</label>
+                                <input type="text">
+                            </div>
+                            <div class="row description">
+                                <label>Descripción</label>
+                                <textarea></textarea>
+                            </div>
+                            <div class="row status">
+                                <label for="status">Estado:</label>
+                                <select id="status" class="status-select">
+                                    <option value="Pendiente">Pendiente</option>
+                                    <option value="Completada">Completada</option>
+                                </select>
+                            </div>
+                            <button>Añadir</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Botón para agregar nueva tarea -->
+            <li class="add-box">
+                <div class="icon"><i class="ri-add-line"></i></div>
+                <p>Añadir nueva tarea</p>
+            </li>
+            <!-- Lista de tareas -->
+            <ul class="wrapper task-list">
+                <!-- Las tareas se añadirán aquí dinámicamente con JavaScript -->
+            </ul>
+        </section>
+
+        <section id="Calendario">
+            <h2>Calendario de eventos</h2>
+        </section>
+
+        <section id="historial">
+            <h2>Historial de tareas</h2>
+        </section>
+    </main>
+
+    <script defer src="{{ url_for('static', filename='menu_movi.js') }}"></script>
+</body>
+</html>
+
